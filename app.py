@@ -151,10 +151,10 @@ with tab2:
         occupancy = st.slider("Occupancy (% of days in year)", 0.0, 100.0, 60.0, 1.0)
     with colB:
         avg_stay = st.radio("Average stay (nights)", [1, 2, 3, 4], index=1, horizontal=True)
-        cost_per_clean = st.number_input("Cost per clean (incl. linen) (£)", min_value=0.0, value=60.0, step=5.0)
-        mgmt_pct_str = st.slider("Management (% of revenue)", 0.0, 50.0, 15.0, 0.5)
+        cost_per_clean = st.number_input("Cost per clean (incl. linen) (£)", min_value=0.0, value=50.0, step=5.0)
+        mgmt_pct_str = st.slider("Management (% of revenue)", 0.0, 50.0, 0.0, 0.5)
     with colC:
-        platform_pct = st.slider("Platform/OTA fee (% of revenue)", 0.0, 20.0, 3.0, 0.5)
+        platform_pct = st.slider("Platform/OTA fee (% of revenue)", 0.0, 20.0, 5.0, 0.5)
         utilities_mo = st.number_input("Utilities (monthly, £)", min_value=0.0, value=250.0, step=10.0)
         rates_annual = st.number_input("Council tax / business rates (annual, £)", min_value=0.0, value=0.0, step=50.0)
 
